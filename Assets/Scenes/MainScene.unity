@@ -635,6 +635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 707813702}
   - component: {fileID: 707813701}
+  - component: {fileID: 707813703}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -668,6 +669,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &707813703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707813700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282350470922f4472b2e3af87cbd27ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elements: {fileID: 11400000, guid: a21f935dba09c4faa8434bd6ba48296c, type: 2}
+  listParent: {fileID: 1318479466}
+  prefabElementPanel: {fileID: 6952241831451767162, guid: ddec397904f7a7b40915803815062512, type: 3}
 --- !u!1 &972258229 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3997013076596273682, guid: 93da745414450d6409da9c12360858bb, type: 3}
@@ -1068,7 +1084,7 @@ GameObject:
   - component: {fileID: 1786404169}
   - component: {fileID: 1786404168}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: TopPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
