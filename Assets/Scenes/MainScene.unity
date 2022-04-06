@@ -958,6 +958,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 1318479466}
+    - target: {fileID: 105040330450406933, guid: 93da745414450d6409da9c12360858bb, type: 3}
+      propertyPath: prefabElementPanel
+      value: 
+      objectReference: {fileID: 6952241831451767162, guid: ddec397904f7a7b40915803815062512, type: 3}
     - target: {fileID: 658187927449843639, guid: 93da745414450d6409da9c12360858bb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

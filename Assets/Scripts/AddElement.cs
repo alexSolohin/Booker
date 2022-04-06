@@ -13,7 +13,7 @@ public class AddElement : MonoBehaviour {
     [SerializeField] private TMP_InputField nameField;
     [SerializeField] private TMP_InputField authorField;
     [SerializeField] private Button addButon;
-
+    
     private void OnEnable() {
         addButon.onClick.AddListener(Add);
         nameField.text = "";
@@ -22,7 +22,13 @@ public class AddElement : MonoBehaviour {
 
     public void Add() {
         ElementPanel elementPanel = Instantiate(prefabElementPanel, parent).GetComponent<ElementPanel>();
-        elementPanel.FillElement(authorField.text, nameField.text);
+        Element element = new Element {
+            author = authorField.text,
+            name = nameField.text,
+            date = DateTime.Now.ToShortDateString()
+        };
+        elementPanel.FillElement(element);
+        AppMain.Instance.elements.elements.Add(element);
         gameObject.SetActive(false);
     }
 

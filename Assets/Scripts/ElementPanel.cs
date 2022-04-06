@@ -9,10 +9,10 @@ public class ElementPanel : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI autorField;
     [SerializeField] private TextMeshProUGUI dateField;
 
-    public void FillElement(string autor, string name) {
-        autorField.text = autor;
-        nameField.text = name;
-        dateField.text = DateTime.Now.ToShortDateString();
+    public void FillElement(Element element) {
+        autorField.text = element.author;
+        nameField.text = element.name;
+        dateField.text = element.date;
     }
 }
 
